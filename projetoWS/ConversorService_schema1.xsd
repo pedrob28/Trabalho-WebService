@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://controle/" xmlns:tns="http://controle/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="celparaFah" type="tns:celparaFah"/>
+
+  <xs:element name="celparaFahResponse" type="tns:celparaFahResponse"/>
+
+  <xs:element name="fahparaCel" type="tns:fahparaCel"/>
+
+  <xs:element name="fahparaCelResponse" type="tns:fahparaCelResponse"/>
+
+  <xs:complexType name="celparaFah">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:float"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="celparaFahResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:float"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="fahparaCel">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:float"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="fahparaCelResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:float"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+
